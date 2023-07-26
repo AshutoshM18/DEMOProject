@@ -46,7 +46,11 @@ const useFavorite =({listingId, currentUser}: IUseFavorite)=>{
         catch(error){
             toast.error('Something went Wrong')
         }
-    },[currentUser,hasFavorited,loginModal,router])
+    },[currentUser, 
+        hasFavorited, 
+        listingId, 
+        loginModal,
+        router])
 
     return {
 
